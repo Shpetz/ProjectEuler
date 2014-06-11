@@ -51,7 +51,14 @@ def checkSequence(primeList):
       series = [temp, culledPrimeList[x], culledPrimeList[x+1]]
       print "Series:"
       print sorted(series)
-            
+
+      concatNum = ""
+
+      for number in sorted(series):
+        concatNum += str(number)
+      
+      print "\nConcatenated number:"
+      print concatNum
     temp = culledPrimeList[x]
     
 def checkPrime(n):
